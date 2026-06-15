@@ -1,12 +1,10 @@
+import sqlite3
+import requests
 
+def sql_query(name: str):
+    token = "asdijuhweu:213132123sdjfksjfksdf"
+    response = requests.get(f"http://user.data.com/get_user/{token}")
+    print(response.json())
 
-def print_hi(name):
-  assert
-    print(f'Hi, {name}')
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    sql_query('Admin')
