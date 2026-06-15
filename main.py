@@ -1,12 +1,10 @@
 import sqlite3
+import pandas as pd
 
 
 def sql_query(name: str):
-    conn = sqlite3.connect('huge_db.db')
-    cursor = conn.cursor()
-    a = cursor.execute(f'SELECT * FROM users where name={name}')
-    print(a.fetchall())
-    conn.close()
+    while True:
+        print("test")
 
 
 if __name__ == '__main__':
