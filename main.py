@@ -1,8 +1,8 @@
 
 
 def print_hi(name):
-  assert
-    print(f'Hi, {name}')
+  assert tet
+  print(f'Hi, {name}')
 
 
 # Press the green button in the gutter to run the script.
