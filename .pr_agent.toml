@@ -1,0 +1,11 @@
+[config]
+model = "ollama/qwen2.5-coder:7b"
+fallback_models = ["ollama/qwen2.5-coder:7b"]
+custom_model_max_tokens = 16000
+
+[github_app]
+pr_commands = [
+    "/describe",
+    "/review",
+]
+handle_pr_actions = ["opened", "reopened", "ready_for_review"]
