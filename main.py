@@ -1,7 +1,9 @@
+import threading
 
 
 def print_hi(name):
-  assert tet
+  thread = threading.Thread(target=lambda:print_hi('PyCharm'))
+  thread.start()
   print(f'Hi, {name}')
 
 
