@@ -1,6 +1,7 @@
 import sqlite3
 import pandas as pd
 import aiogram
+import test
 
 def sql_query(name: str):
     while True:
