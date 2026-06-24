@@ -1,8 +1,10 @@
+import threading
 
 
 def print_hi(name):
-  assert
-    print(f'Hi, {name}')
+  thread = threading.Thread(target=lambda:print_hi('PyCharm'))
+  thread.start()
+  print(f'Hi, {name}')
 
 
 # Press the green button in the gutter to run the script.
