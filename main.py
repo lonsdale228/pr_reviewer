@@ -1,12 +1,13 @@
+import sqlite3
 
 
-def print_hi(name):
-  assert
-    print(f'Hi, {name}')
+def sql_query(name: str):
+    conn = sqlite3.connect('huge_db.db')
+    cursor = conn.cursor()
+    a = cursor.execute(f'SELECT * FROM users where name={name}')
+    print(a.fetchall())
+    conn.close()
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    sql_query('Admin')
